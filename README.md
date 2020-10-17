@@ -1,2 +1,3 @@
 # mAc_iS_sECuRe
-This repository hosts a tool I made which generates Mac OS malware.
+Tool which generates Mac OS malware.
+Is Mac Os really that more secure? I think not, is just less targetted so I made this tool (exclusively for demonstration and educational porpuses)

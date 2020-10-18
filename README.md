@@ -5,6 +5,7 @@ Is Mac Os really that more secure? I think not, is just less targetted so I made
 ## Requirements
 - Python 3.6 +
 - Golang 1.14 +
+- Netcat
 
 ## Installation
 ### Windows:

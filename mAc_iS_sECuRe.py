@@ -4,7 +4,7 @@ import sys
 import os
 
 def infos():
-    print("\nPython tool to generate Mac Os malware.\nDeveloped by @thedevilroot | @luke_sh \nLast update: 18/10/2020\n[!] I am not responsible for any of your actions.\nEnjoy!\n")
+    print("\nPython tool to generate Mac Os malware.\nDeveloped by @thedevilroot | @luke_sh \nLast update: 23/10/2020\n[!] I am not responsible for any of your actions.\nEnjoy!\n")
     inputline()
 
 def clear():
